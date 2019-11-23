@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <h2>Simp3 Encoding</h2>
+
+  <form>
+    <div id="form-container">
+      <div id="encode-container">
+        Encode Text<br>
+        <textarea 
+          type="text" 
+          name="plainText" 
+          placeholder="simple plain text..." 
+          id="plainText"
+          rows="20" 
+          cols="50"
+        ></textarea>
+        <br><br>
+        <button id="encode-btn">Encode</button>
+        <h6>Encoded Output:</h2>
+        <p id="encoded-output"></p>
+      </div>
+
+      <div id="decode-container">
+        Decode Text<br>
+        <textarea 
+          type="text" 
+          name="encodedText" 
+          placeholder="mossed simp3 encoded text..." 
+          id="encodedText"
+          rows="20" 
+          cols="50"
+        ></textarea>
+        <br><br>
+        <button id="decode-btn">Decode</button>
+        <h6>Decoded Output:</h2>
+        <p id="decoded-output"></p>
+      </div>
+    </div>
+  </form>
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="frontend.js"></script>
+</body>
+
+</html>
