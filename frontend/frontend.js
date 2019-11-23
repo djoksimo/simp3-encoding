@@ -1,4 +1,17 @@
-const simp3 = new Simp3();
+async function post(payload, endpoint, domain) {
+  const url = domain || `http://localhost:3000/${endpoint}`;
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      // "Access-Control-Allow-Origin": "*",
+      "Content-Type": "application/json",
+    },
+    
+    body: JSON.stringify(payload),
+  });
+  return response.json();
+}
 
 function clearParagraphInput(paragraphElement) {
   paragraphElement.innerText = ""; // clear output
@@ -45,20 +58,29 @@ function copyResults(val) {
   alert("Copied the encoded text");
 }
 
-function displayEncodedResult() {
-  let encodedVal = simp3.encode(getPlainInput().value);
+async function displayEncodedResult() {
+  let res = await post({
+    plainText: getPlainInput().value,
+  }, "encode");
+
+  const { encodedText } = res;
   let paragraph = document.getElementById("encoded-output");
   clearParagraphInput(paragraph);
-  displayOutput(paragraph, encodedVal);
-  copyResults(encodedVal);
+  displayOutput(paragraph, encodedText);
+  copyResults(encodedText);
 }
 
-function displayDecodedResult() {
-  let decodedVal = simp3.decode(getEncodedInput().value);
+async function displayDecodedResult() {
+  let res = await post({
+    plainText: getEncodedInput().value,
+  }, "decode");
+
+  const { decodedText } = res;
+
   let paragraph = document.getElementById("decoded-output");
   clearParagraphInput(paragraph);
-  displayOutput(paragraph, decodedVal);
-  copyResults(decodedVal);
+  displayOutput(paragraph, decodedText);
+  copyResults(decodedText);
 }
 
 function addButtonListeners() {
