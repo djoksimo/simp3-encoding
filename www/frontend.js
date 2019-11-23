@@ -1,5 +1,7 @@
-async function post(payload, endpoint, domain) {
-  const url = domain || `http://localhost:3000/${endpoint}`;
+async function post(payload, endpoint) {
+  let url = `https://simp3-api.appspot.com/${endpoint}`;
+  // let url = domain || `http://localhost:3000/${endpoint}`;
+   
   const response = await fetch(url, {
     method: "POST",
     headers: {
@@ -55,7 +57,7 @@ function copyResults(val) {
   document.execCommand('copy');
   document.body.removeChild(el);
 
-  alert("Copied the encoded text");
+  alert("Copied the output");
 }
 
 async function displayEncodedResult() {
@@ -72,7 +74,7 @@ async function displayEncodedResult() {
 
 async function displayDecodedResult() {
   let res = await post({
-    plainText: getEncodedInput().value,
+    encodedText: getEncodedInput().value,
   }, "decode");
 
   const { decodedText } = res;

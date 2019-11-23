@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+#title {
+  flex: 1;
+  align-self: center;
+}
+
+#form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+#encode-container {
+  width: 400px;
+  align-self: center;
+  padding: 4em;
+}
+
+#decode-container {
+  width: 400px;
+  padding: 4em;
+  margin-left: auto;
+}
