@@ -27,7 +27,7 @@ body {
 }
 
 #decode-container {
+  align-self: center;
   width: 400px;
   padding: 4em;
-  margin-left: auto;
 }
