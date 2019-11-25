@@ -6,8 +6,8 @@ The interface for converting plain text to an unreadable format and vice-versa.
 
 ### Why should I use Simp3 encoding?
 
-ݰځޒȃۤ۵݆ȇ菵펆Ü搭­
+ݰځޒȃۤ۵݆ȇ菵펆Ü搭
 
 ### How does Simp3 work?
 
-ېؑٲړشȅ菳틄¨
+ېؑٲړشȅ菳틄
