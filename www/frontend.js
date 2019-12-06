@@ -1,102 +1,106 @@
 async function post(payload, endpoint) {
-  let url = `https://simp3-api.appspot.com/${endpoint}`;
-  // let url = domain || `http://localhost:3000/${endpoint}`;
+  ۀّ݂ȃݔܥۆȇϘȉ؊ڋ݌ݍ܎ܿΰ́̂݃ڤۥܖ͇˨ةܚګ˼حܞܟݐܡܒݣٕ̄ܖ۷̘ɩߚٻ܌٭ܮܟۀܑݲࠃشϥ
    
-  const response = await fetch(url, {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      // "Access-Control-Allow-Origin": "*",
-      "Content-Type": "application/json",
-    },
-    
-    body: JSON.stringify(payload),
-  });
-  return response.json();
+  ذ۱݄ۢܳȅܦܸٗ܉ۺܼ۫ٝȎϟȐءނأڤݕȖٷ٨ݙيڛʜݭܾ۟ˠȡߒÃȤȥȦȧ۸ٹݪګܜ٭ώȯɐԱԢգմ
+  ɕ˶×ȸȹȺȻڼڍَٿڐݡݲϣɄߵæɇɈɉɊɋɌѝپٿڠݑޒϳɔɵ٦ݗݘܙ۪ڋ٬
+  ޝۮݏ݀͑܂ޓݔ݅ʆ̧Ĉɩɪɫɬɭɮ͟͠ɱʒ҃ڤڥۆާި͉Ҫݫݜ޽ޞݯ݀͑Ғ݄݃ݵ߶͗ոީܚۻܜݭʮЯʐʱ̲ʳ͔
+  ĵʖʗʘʙʚʛʼӍގݿߠ۱ނߣʹץ࠶ާ۸ˉъʫˌڽޮޯݰ݁ۢۃߴ݅ަޗΨݙߪޫޜ˝;şˀˁ˂˃࢔΅Ŧˇˈˉˊūˌˍ
+  ˎˏ۰߁ܒࡣѴ˕ն؇׈ֹκࠋ߽ࠜݮ޿ݐݱ݂ࡳͤߥ۶ࡷި
+  ߙۺܫͼέƎ˯˰ࣁ΂ң
+
+  return ܠّܲ܃۴ۥܶٗ˨کܺۻ۬ʍʞο;
 }
 
 function clearParagraphInput(paragraphElement) {
-  paragraphElement.innerText = ""; // clear output
+  ܀ؑܢؓٴܥؖ܇ڈљۊٛۜٝۮݏ˰ڡ۲۳٤ܵՖ٧ޘݙȚϫȜȽȾϏȠ̑̒ȣٔۥٶط݈ȩܚݻݬܭݾݯ
 }
 
 function getPlainInput() {
-  return document.getElementById("plainText");
+  return ـ۱زݓ۔ٕۦ݇˨ٹٚ݋ќۍٞ۟٠۱ݒгޤҥٖʗȸܙۚثڬ۽՞ٯޠݡɂʳϔ;
 }
 
 function getEncodedInput() {
-  return document.getElementById("encodedText");
+  return ـ۱زݓ۔ٕۦ݇˨ٹٚ݋ќۍٞ۟٠۱ݒгޤҥٖʗȸ٩ۺً܌ٝٮٟՠٱޢݣɄʵϖ;
 }
 
 function displayOutput(paragraphElement, outputText) {
-  let output = document.createTextNode(outputText);
-  paragraphElement.appendChild(output);
+  ۀّ݂ȃ۴ݕ݆܇ݘ݉ȊϛȌٍ۾ؿݠۡ٢۳ݔ˵نܷ٨ةݚ٫՜٭ޞݟԀܑ٢ٳʤܕݶݧܨݹݪիټޭݮʿϠ
+  Ȁȁ܂ؓܤؕٶܧؘ܉ڊћیٝ۞ٟ۰ݑ˲أܔܕ٦۷٘щښګۜٝʞ܏ݰݡܢݳݤʵϖÇ
 }
 
 function addInputListeners() {
-  let plainInput = document.getElementById("plainText");
-  plainInput.addEventListener('input', (e) => {
-    console.log("plainText: ", e.target.value);
-  });
+  ۀّ݂ȃ܄ۅؖڗۨҙ۪܋ݜݍȎϟȐّ܂كݤۥ٦۷ݘ˹ڊ٫ݜѭ۞ٯ۰ٱ܂ݣф޵Ҷ٧ʨɉܪ۫ؼڽ܎կڀޱݲɓ˄ϥ
+  ܀ہؒړۤҕۦ܇ݘ݉˪؛ٌٍўݯ٠۱ݒӓڤ݅ݖ٧۸٩ܺʛʌڭ۾ܟݰݡ
+  ʒˣȤʥٶʷȨϹЊȫߜÍȮȯȰȱ٢ܣܔݥܦ۷ڈ̙ۺܫڬʽɞܿ܀ّےܣք
+  ڕ߆އϨɉɪ̋Ɍڝ̮ޏ٠ݱۂڣޔ̵޶٧ܘީڪ˫Ќýɞɟ࠰˱В
 
-  let encodedInput = document.getElementById("encodedText");
-  encodedInput.addEventListener('input', (e) => {
-    console.log("encodedText: ", e.target.value);
-  });
+  ۀّ݂ȃٔۥض۷وٙيқ۬܍ݞݏȐϡȒٓ܄مݦۧ٨۹ݚ˻ڌ٭ݞѯ۠ٱ۲ٳ܄ݥц޷Ҹ٩ʪɋټ܍ٞܟٰځٲճڄ޵ݶɗˈϩ
+  ِۡز۳لٕنҗۨ܉ݚ݋ˬ؝َُѠݱ٢۳ݔӕڦ݇ݘ
+  ٩ۺ٫ܼʝʎگ܀ܡݲݣʔ˥ȦʧٸʹȪϻЌȭߞÏȰȱȲȳ٤ܥܖݧܨ۹
+  ڊ̛ۼܭڮʿɠڑܢٳܴڅږڇֈڙߊދϬɍɮ̏ɐڡ̲ޓ٤ݵۆڧޘ̹޺٫ܜޭڮ˯Аāɢɣ࠴˵Ж
 }
 
 function copyResults(val) {
-  const el = document.createElement('textarea');
-  el.value = val;
-  el.setAttribute('readonly', '');
-  el.style.position = 'absolute';
-  el.style.left = '-9999px';
-  document.body.appendChild(el);
-  el.select();
-  el.setSelectionRange(0, 99999); /*For mobile devices*/
-
-  document.execCommand('copy');
-  document.body.removeChild(el);
-
-  alert("Copied the output");
+  ذ۱݄ۢܳȅٖۇȈϙȊًۼؽݞ۟٠۱ݒ˳لܵ٦اݘ٩Ѫۛ٬ۭٮۿݠ
+  
+  ʡʒݣٴޥݦط݈ٹغʛʼϝÎȯȰځ۲̓ޔم۶އڈȹ
+  ЊȻޜٍ۾ϯàɁɂړ܄̥ݶڗވљފދݬ۝ٮޟސڡ˒˃ݴڥ٦ڗ݈ܹܚ߫ˌ̝ɞ
+  ˏː˱Вăɤɥڶܧ͈ޙު߻ܬڽ͎ݯݠޡ܂޳܄ݥݖɷшɹ˪ڋڜޭݮܿߐ߁ے˳дĥʆʇۘ݉ͪ޻ߌࠝ
+  ݎ۟Ͱݑۢ۳ߔʕѦʗ̈ͩЪЫЬЭޞࠟ̐ёłʣʤۥޖۗ߸ݹۺދ߬΍ێޟ۰ࡁΒ
+  ۃ޴޵܆ޗ۸өܺ݋ݼ۽̾܏ހ͑Ѳţ˄˅ܖއΨ߹ܚދܜ۽ࠎ͏͠ҁŲ˓˔ܥޖηࠈܩࠚ؋ܬޝܮ܏ࠠݱߒ߃؄
+  ۵߆ݗܸͩϪΫˬѽѾѿҀҁ΂ң˴ϥΖ՗ߨ࠙˺ߋ߬ܝގ޿ݐ݂́ݓࡤޕܶݗ࠸ΩϺƫƬ̍̎
+  
+  ݏࠀ݁ࡢߣݤߵࡖϷݨ࢙ݪ݋Ռࠍ߮߯ܰࠁݢΣΔݕࠖࠧࢸΙκӛǌ̭̮ݯࠠݡࢂࠃ
+  
+  ބࠕࡶЗݘࠩݺ࣋М࡝ގࠏ࠰ࢡޒճ߄ߕࠆއψޙࠊ
+  ϛӼǭǮ͏͐ݡࠒޣࡴ࢕ϖͷֈࡉ࡚߫ެޝ࢟͞ߠޱ͢ࡓࢴࢥࡦࢷࢨΉϺԛ
 }
 
 async function displayEncodedResult() {
-  let res = await post({
-    plainText: getPlainInput().value,
-  }, "encode");
+  ۀّ݂ȃܤٕܶȇϘȉؚݻ؜ڝݎȏ
+  ܐ܁݂ݓʔ߅¶ȗȘșȚܛۜحڮۿՠٱޢݣτȥږ
+  ٷݨԩ۪ػڼ܍Ҿ܏ܰށݲʳ˄̕ޖه۸މڊ˻ÜȽ
+  Ⱦࠏ̀Ɂɢړܤٵܶڇژɩ˚ϻ
 
-  const { encodedText } = res;
-  let paragraph = document.getElementById("encoded-output");
-  clearParagraphInput(paragraph);
-  displayOutput(paragraph, encodedText);
-  copyResults(encodedText);
+  ذ۱݄ۢܳȅ޶ȇ٘۩غۻٌَٝՏ٠ޑݒȓߤȕ
+  Ϧȗܸ٩݊ϋ¼ȝȞٰ۟ݡȢܣش݅ضڗ݈عܪګȬϽȮٯܠ١ނ܃ڄܕݶ̗ڨ
+  ډݺҋۼڍ܎ڏܠށѢߓӔڅˆɧژܩٺܻڌڝڎ̟݀ޡޒ
+  ݓޤޕɶ˧Јùɚɛڌܝڮٯހաٲރٴەކٷݨ۩Ӻ݋ݬ޽ޮ˯ݰځޒڃۤޕچݷ۸
+  ̉Ъěɼɽھ܏ްށ݂ړࠔյߖ߇ވߙߊ̋ތڝޮڟ܀ޱڢޓܔ͕ʖۧݸۉފۛ۬
+  
+  ۝מۯࠠߡ̲ѓńʥʦۗޘީ࠺׋ۼߝ߾ݯ߰ߡ̲܃ޔۥަ۷܈۹׺܋࠼߽͎ѯ
 }
 
 async function displayDecodedResult() {
-  let res = await post({
-    encodedText: getEncodedInput().value,
-  }, "decode");
-
-  const { decodedText } = res;
-
-  let paragraph = document.getElementById("decoded-output");
-  clearParagraphInput(paragraph);
-  displayOutput(paragraph, decodedText);
-  copyResults(decodedText);
+  ۀّ݂ȃܤٕܶȇϘȉؚݻ؜ڝݎȏܐ܁݂ݓʔ߅¶ȗ
+  
+  ȘșȚ٫ۼٍ܎ٰٟ١բٳޤݥφȧژٹݪѻ܌ٝܞٯڀٱӂܓܴޅ
+  ݶʷˈ̙ޚًۼލڎ˿àɁɂࠓ̄Ʌɦڇژٹܺڋڜɭ˞Ͽ
+  ðñɒɓڄ݅ܶއޘəࠊɛڜڭڎݏڠڱڢ֣ڴߥަɧ࠸ɩкɫތڽޞПĐđɲɳܴۅ޶ɷݸډޚڋ۬ޝ
+  ڎݿ܀ʁђʃۄݵڶߗݘۙݪߋͬ۽۞ߏӠݑۢݣۤݵߖҷࠨԩ̛ۚ
+  ʼ۝ۮۏސۡ۲ۣʹޕ߶ߧި߹ߪˋ̼ѝŎʯʰۡݲ܃ۄߕֶۇߘۉܪߛی޽ܾՏޠ߁ࠒࠃ
+  
+  ̈́߅ۖߧܹۘߪۛߌݍ͞ѿŰˑ˒ܓݤࠅߖޗۨࡩ׊ࠫࠜߝ࠮ࠟ͠ߡ۲ࠃ۴
+  ݕࠆ۷ߨݩΪ˫ܬܽܞߟܰ݁ܲس݄ࡵ࠶·Ҩƙ˺˻ܬ
+  
+  ߭߾࢏ؠݑ࠲ࡓ߄ࡅ࠶·݈ݙܺ߻݌ݝݎُݠ࢑ࡒΣӄ
 }
 
 function addButtonListeners() {
-  let encodeBtn = document.getElementById("encode-btn");
-  encodeBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    displayEncodedResult();
-  });
-
-  let decodeBtn = document.getElementById("decode-btn");
-  decodeBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    displayDecodedResult();
-  });
+  ۀّ݂ȃٔۥض۷وٙЪ݋۬ȍϞȏِ܁قݣۤ٥۶ݗ˸ډ
+  
+  ٪ݛѬ۝ٮۯٰ܁ݢу޴ҵ٦ʧɈٹ܊ٛܜ٭پ˿ِݱܒɓ˄ϥÖȷȸ
+  
+  ډܚ٫ܬٽڎџހܡ̢ٓڄڅҖާژܩފԋۜݽގڟܰڡݲ˓ɴڅܖۧڈ܉
+  ɺ̛ɜ˝ڮ˯ɠбтɣࠔąɦɧɨɩں͋ݬލھߏۀݑ޲ҳۄەچ
+  ߇ܸ޹˺̋Ьĝɾɿʀʁۂܓ޴ޅ݆ڗ࠘әݪڻݼۍ۞ۏ
+  ְۡ߂ߣݔߕ̧̖шĹʚʛ࡬̭юĿŀʡʢݣ۴ߥʦۧ۸ۙޚ۫ۼӍ߮ޏʰҁʲ۳ޤۥࠆއ
+  
+  ܈ޙߺΛܬ܍߾ԏހܑޒܓޤࠅӦࡗ՘܉͊˫܌ܝ۾޿ܐܡ΢۳ࠔ޵˶ͧ҈
+  Ź˚˛ܜܭ܎ߏܠܱԂࠣ߄υ۶ܧܨԹࡊܻߌ֮࠭ݿࠠ࠱݂ߓ݄ࠕͶ̗ܨ޹ފܫެ̝ξ˿΀ݑ
+  
+  Β̃Ӕӥ̆ࢷƨ̉̊̋̌ݝϮࠏ࠰ݡࡲݣߴࡕՖݧݸܩࡪߛ࡜
+  Νήӏǀ̡̢̣̤ݥ޶ࡗࠨߩܺࢻլݽݞࠟݰށݲٓބࡥࢆ߷ࡸιϊӫǜ̽̾एϐӱ
 }
 
 addInputListeners();
